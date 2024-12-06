@@ -1,6 +1,8 @@
-export default function Button({ children }: { children: string }) {
+import "./styles.scss";
+
+export default function Button({ children, onMouseUp }: { children: string, onMouseUp?: () => void }) {
  return (
-  <button>
+  <button onMouseUp={onMouseUp} className="mini-button">
    {children}
   </button>
  );

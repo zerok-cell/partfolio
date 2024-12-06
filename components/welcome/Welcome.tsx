@@ -1,13 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import "./welcome_style.scss";
-import { Ledger } from "next/font/google";
 import { useEffect, useState } from "react";
-
-const ledger = Ledger({
- subsets: ["latin"],
- weight: "400"
-});
+import AboutMe from "@/components/welcome/AboutMe";
+import { ledger } from "@/app/fonts/fonts";
 
 const Welcome = () => {
  const startWelcome: string = "Welcome to my";
@@ -17,16 +13,11 @@ const Welcome = () => {
  useEffect(() => {
   const totalTime = startWelcome.length * 100;
   for (let i = 0; i < startWelcome.length; i++) {
-
    setTimeout(() => {
-
     setValue((prev) => prev + startWelcome[i]); // Добавляем текущий символ
-
    }, 1000 + (i + 2) * 50); // Интервал между символами в миллисекундах
-
   }
   setTimeout(() => {
-
    setDisable(true);
 
   }, totalTime);
@@ -47,12 +38,12 @@ const Welcome = () => {
    <motion.h1
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    
    >
     {value} <span
     style={{ color: "#9595e6", opacity: disable ? "100%" : "0" }}>portfolio</span>
     <hr />
    </motion.h1>
+   <AboutMe />
   </motion.div>
  );
 };
