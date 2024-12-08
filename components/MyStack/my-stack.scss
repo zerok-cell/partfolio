@@ -7,6 +7,9 @@
   img {
     transition: 0.2s ease all;
     margin-left: 20px;
+    @media (max-width: 384px) {
+      width: 100px;
+    }
 
     &:hover {
       margin-bottom: 20px;
@@ -23,7 +26,13 @@
   align-items: center;
   display: grid;
   grid-template-columns: 943px 1fr;
-  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-rows: 300px 20320px 200px 200px;
+  @media (max-width: 384px) {
+    grid-template-columns: 384px 1fr;
+    grid-template-rows: repeat(3, 10%);
+
+
+  }
 
   * {
     z-index: 2;
@@ -32,6 +41,10 @@
   h1 {
     margin: 0;
     font-size: 100px;
+
+    @media (max-width: 384px) {
+      font-size: 20px;
+    }
   }
 
   .h1about {
@@ -60,6 +73,12 @@
     background-color: var(--shadow-graphite);
 
     height: 100%;
+    @media (max-width: 384px) {
+      grid-row: 2;
+      grid-column: 1;
+
+
+    }
   }
 
 

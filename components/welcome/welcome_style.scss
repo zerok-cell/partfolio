@@ -35,6 +35,9 @@
     grid-column: 2;
     font-size: 70px;
     color: var(--text-color);
+    @media (max-width: 384px) {
+      font-size: 40px;
+    }
 
     span {
       color: var(--green-text)
@@ -70,6 +73,15 @@
   display: flex;
   transition: 0.9s ease rotate;
 
+  @media (max-width: 384px) {
+    grid-row: 3;
+    align-self: start;
+    margin-right: 20px;
+    width: 80%;
+    justify-self: center;
+    grid-column: 1/3;
+  }
+
   &:hover {
     rotate: 2deg;
   }
@@ -92,7 +104,22 @@
   img {
     border-radius: 5px;
     border: 3px var(--green-text) solid;
+    @media (max-width: 384px) {
+
+      display: none;
+    }
   }
+
+  @media (max-width: 384px) {
+
+    grid-row: 1;
+    margin-top: 17%;
+    align-self: start;
+    margin-right: 20px;
+    justify-self: center;
+    grid-column: 1/3;
+  }
+
 
   #clip-git {
 
@@ -127,6 +154,11 @@
         margin-left: 10px;
         color: var(--green-text);
       }
+
+    }
+
+    @media (max-width: 384px) {
+      grid-column: 1/3;
     }
   }
 
