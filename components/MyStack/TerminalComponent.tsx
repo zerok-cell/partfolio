@@ -6,7 +6,6 @@ import { motion, useAnimate } from "framer-motion";
 
 const TerminalComponent = () => {
  const [scope, animate] = useAnimate();
- const [pscope, animateParagrapge] = useAnimate();
  const side = (state: boolean) => {
   animate(scope.current, {
    height: state ? "90%" : 0, x: state ? 0 : 600

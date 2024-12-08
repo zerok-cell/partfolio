@@ -1,8 +1,7 @@
 "use client";
-import { motion, useAnimate } from "framer-motion";
+import { motion } from "framer-motion";
 
 const HeaderFromMyStack = () => {
- const [scope, animate] = useAnimate();
 
 
  // const neon = () => {
@@ -18,7 +17,7 @@ const HeaderFromMyStack = () => {
     About
    </motion.h1>
 
-   <motion.div initial={{ boxShadow: "" }} ref={scope} id={"mystackh1"}>
+   <motion.div initial={{ boxShadow: "" }} id={"mystackh1"}>
     <motion.h1>
      my stack
     </motion.h1>
