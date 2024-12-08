@@ -11,7 +11,7 @@ import { DataHeaderLink } from "@/app/types";
 import ContactEmergencyIcon from "@mui/icons-material/ContactEmergency";
 import HorizontalSplitIcon from "@mui/icons-material/HorizontalSplit";
 import TerminalIcon from "@mui/icons-material/Terminal";
-
+import supernova from "@/public/supernova.webp";
 
 export const dataStack = [
  {
@@ -40,12 +40,23 @@ export const dataStack = [
  }
 ];
 
-export const data: DataHeaderLink[] = [{
- text: "Contact", url: "/contact/", icon:  <ContactEmergencyIcon />
+export const dataFromHeader: DataHeaderLink[] = [{
+ text: "Contact", url: "#contact", icon: <ContactEmergencyIcon />
 },
  {
   text: "About my stack", url: "#my-stack", icon: <HorizontalSplitIcon />
  },
  {
-  text: "My projects", url: "/my_projects/", icon: <TerminalIcon />
+  text: "My projects", url: "#my-projects", icon: <TerminalIcon />
  }];
+
+export const cardProject = [{
+ description: "Supernova is a project for communicating with a chatbot, this is my pet project. At the moment, it is not functional because it does not reach the hands to make a backend.",
+ photo: supernova,
+ col: 1,
+ row: 2,
+ colP: 2,
+ alt: "supernova",
+ width: 1000
+
+}];

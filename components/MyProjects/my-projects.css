@@ -1,12 +1,9 @@
-
 #my-projects {
   display: grid;
   width: 100%;
   height: max-content;
   grid-template-rows: 100px repeat(2, 500px);
   grid-template-columns: repeat(2, 1fr) 200px;
-
-
 }
 
 .h1-myproject {
@@ -50,6 +47,7 @@
   padding: 30px;
   border-radius: 10px;
   border: 2px solid var(--green-text);
-
   color: var(--text-color);
 }
+
+/*# sourceMappingURL=my-projects.css.map */

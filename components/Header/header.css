@@ -1,0 +1,40 @@
+#header-panel {
+  z-index: 3;
+  position: fixed;
+  background-color: #0B0A0E;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #222222;
+}
+
+.header-panel-links {
+  display: flex;
+  justify-content: center;
+  transition: 400ms ease-in-out all;
+}
+.header-panel-links a:hover {
+  scale: 1.1;
+}
+.header-panel-links:hover > :not(:hover) {
+  color: color-mix(in srgb, var(--text-color), black);
+  filter: opacity(50%);
+}
+.header-panel-links a {
+  transition: 100ms ease-in-out all;
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 20px;
+}
+.header-panel-links a * {
+  margin-left: 5px;
+  color: var(--green-text);
+}
+
+.base-flex {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=header.css.map */

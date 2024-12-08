@@ -1,0 +1,52 @@
+#header-panel {
+  z-index: 3;
+  position: fixed;
+  background-color: #0B0A0E;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #222222;
+
+
+}
+
+@mixin BaseFlex() {
+  display: flex;
+
+  justify-content: center;
+}
+
+.header-panel-links {
+  @include BaseFlex();
+  transition: 400ms ease-in-out all;
+
+  a:hover {
+    scale: 1.1;
+  }
+
+  &:hover > :not(:hover) {
+    color: color-mix(in srgb, var(--text-color), black);
+    filter: opacity(50%);
+
+
+  }
+
+  a {
+    transition: 100ms ease-in-out all;
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 20px;
+
+    * {
+      margin-left: 5px;
+      color: var(--green-text);
+    }
+
+  }
+
+}
+
+.base-flex {
+  @include BaseFlex
+}

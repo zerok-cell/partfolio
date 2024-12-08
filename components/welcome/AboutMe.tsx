@@ -1,8 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
-import Button from "../MiniComponents/Button";
-import { useState } from "react";
-import { ledger } from "@/app/fonts/fonts";
+import { useEffect, useState } from "react";
+import { funnel_sans } from "@/app/fonts/fonts";
 
 export default function AboutMe() {
  const [value, setValue] = useState("");
@@ -13,22 +12,25 @@ export default function AboutMe() {
  const addword = () => {
   for (let i = 0; i < data.length; i++) {
    setTimeout(() => {
-    setValue((prev) => prev + data[i]); // Добавляем текущий символ
-   }, 1000 + (i + 2) * 20); // Интервал между символами в миллисекундах
+    setValue((prev) => prev + data[i]);
+   }, 1000 + (i + 2) * 20);
   }
+
+
  };
+ useEffect(() => {
+  addword();
+ }, []);
  return (
-  <motion.div id="aboutMe">
-   <motion.div>
-    <p className={`text ${ledger.className}`}>
-     {value}
-    </p>
+  <motion.div animate={{ y: [0, 2, 5, 8, 10, 8, 5, 2, 0] }}
+              transition={{ ease: "easeInOut", type: "keyframes", repeat: Infinity, duration: 2 }}
+              style={{ display: value.length > 0 ? "block" : "none" }} id="aboutMe">
 
-   </motion.div>
+   <motion.p className={`text ${funnel_sans.className}`}>
+    {value}
+   </motion.p>
 
-   <Button onMouseUp={addword}>
-    About me
-   </Button>
+
   </motion.div>
  );
 }

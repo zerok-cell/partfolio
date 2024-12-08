@@ -1,0 +1,35 @@
+#contact {
+  background-color: var(--shadow-graphite);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    margin-left: 20px;
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+
+    p {
+      color: var(--text-color);
+      margin: 0;
+
+      a {
+        background-color: var(--background);
+        border: 0.5px solid grey;
+        border-radius: 10px;
+        padding: 5px;
+        text-decoration: none;
+        color: var(--green-text);
+      }
+    }
+
+    svg {
+      color: var(--green-text);
+    }
+
+
+  }
+
+}

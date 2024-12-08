@@ -1,0 +1,30 @@
+#contact {
+  background-color: var(--shadow-graphite);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#contact div {
+  margin-left: 20px;
+  display: flex;
+  justify-items: center;
+  flex-direction: row;
+}
+#contact div p {
+  color: var(--text-color);
+  margin: 0;
+}
+#contact div p a {
+  background-color: var(--background);
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: var(--green-text);
+}
+#contact div svg {
+  color: var(--green-text);
+}
+
+/*# sourceMappingURL=contact.css.map */
