@@ -1,23 +1,17 @@
-.mini-button {
-  width: 100px;
-  background: #000000;
-  white-space: nowrap;
-  -webkit-box-shadow: 0px 0px 3px 3px rgba(246, 245, 244, 0.09) inset;
-  -moz-box-shadow: 0px 5px 10px 5px rgba(246, 245, 244, 0.14) inset;
-  box-shadow: 0px 0px 10px 10px rgba(246, 245, 244, 0.08) inset;
-  padding: 20px;
-  outline: none;
-  border-radius: 10px;
-  color: white;
-  border: 1px #7e7e7e solid;
-  transition: all 0.1s ease-in;
-}
-.mini-button:active {
-  scale: 1.2;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 10 |   border-radius: $border-radius;
+ *    |                  ^^^^^^^^^^^^^^
+ *    '
+ *   styles.scss 10:18  root stylesheet */
 
-.text {
-  color: white;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 10 \2502    border-radius: $border-radius;\a    \2502                   ^^^^^^^^^^^^^^\a    \2575 \a   styles.scss 10:18  root stylesheet";
 }
-
-/*# sourceMappingURL=styles.css.map */

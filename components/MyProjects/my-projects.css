@@ -1,53 +1,17 @@
-#my-projects {
-  display: grid;
-  width: 100%;
-  height: max-content;
-  grid-template-rows: 100px repeat(2, 500px);
-  grid-template-columns: repeat(2, 1fr) 200px;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "@/public/adaptive-sheet";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   my-projects.scss 1:9  root stylesheet */
 
-.h1-myproject {
-  grid-row: 1;
-  grid-column: 1;
-  z-index: 1;
-  font-size: 60px;
-  width: 100%;
-  border-bottom: 2px solid var(--green-text);
-  border-right: 2px solid var(--green-text);
-  height: 100%;
-  background-color: var(--shadow-graphite);
-  align-self: center;
-  justify-self: center;
-  color: var(--green-text);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"@/public/adaptive-sheet\";\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   my-projects.scss 1:9  root stylesheet";
 }
-
-.grid-curve {
-  grid-row: 1/3;
-  grid-column: 1/3;
-}
-
-.light {
-  padding: 0;
-  margin: 0;
-  width: max-content;
-  color: transparent;
-  z-index: 3;
-  grid-row: 1;
-  vertical-align: top;
-  line-height: 0;
-  grid-column: 1;
-  font-size: 1200px;
-  text-shadow: 0px 6px 1000px var(--green-text);
-}
-
-.describe {
-  justify-self: center;
-  background-color: var(--shadow-graphite);
-  width: 500px;
-  padding: 30px;
-  border-radius: 10px;
-  border: 2px solid var(--green-text);
-  color: var(--text-color);
-}
-
-/*# sourceMappingURL=my-projects.css.map */

@@ -8,7 +8,7 @@ const TerminalComponent = () => {
  const [scope, animate] = useAnimate();
  const side = (state: boolean) => {
   animate(scope.current, {
-   height: state ? "90%" : 0, x: state ? 0 : 600
+   height: state ? "90%" : "0%", x: state ? 0 : 600
   });
  };
 

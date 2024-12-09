@@ -8,7 +8,6 @@ const МyProjects = () => {
 
  return (
   <div className={`${funnel_sans.className}`} id="my-projects">
-   <p className={"light"}>.</p>
    <Image className={"grid-curve"} width={3000}
           src={grid_curve} alt={"Curve grid"} />
    <h1 className={"h1-myproject"}>My projects</h1>

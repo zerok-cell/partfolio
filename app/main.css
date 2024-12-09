@@ -1,8 +1,8 @@
 :root {
   --shadow-graphite: #0B0A0E;
   --background: color-mix(in srgb, var(--shadow-graphite), black);
-  --text-color: white;
-  --green-text: #000000;
+  --text-color: #E6EBE0;
+  --green-text: #31B38B;
 }
 
 html, body {

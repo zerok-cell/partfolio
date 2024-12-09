@@ -1,140 +1,17 @@
-#my-stack {
-  width: 100%;
-  height: max-content;
-  justify-items: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: 943px 1fr;
-  grid-template-rows: 300px 20320px 200px 200px;
-}
-@media (max-width: 384px) {
-  #my-stack {
-    grid-template-columns: 384px 1fr;
-    grid-template-rows: repeat(3, 10%);
-  }
-}
-#my-stack * {
-  z-index: 2;
-}
-#my-stack h1 {
-  margin: 0;
-  font-size: 100px;
-}
-@media (max-width: 384px) {
-  #my-stack h1 {
-    font-size: 20px;
-  }
-}
-#my-stack .h1about {
-  color: var(--green-text);
-}
-#my-stack #mystackh1 h1 {
-  color: var(--text-color);
-  background-color: var(--shadow-graphite);
-}
-#my-stack #mystackh1 {
-  border-radius: 10px;
-  border: 2px solid var(--green-text);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: var(--shadow-graphite);
-  height: 100%;
-}
-@media (max-width: 384px) {
-  #my-stack #mystackh1 {
-    grid-row: 2;
-    grid-column: 1;
-  }
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "@/public/adaptive-sheet";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   my-stack.scss 1:9  root stylesheet */
 
-.base-icons {
-  opacity: 90%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"@/public/adaptive-sheet\";\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   my-stack.scss 1:9  root stylesheet";
 }
-
-.next-ts-js {
-  grid-row: 2;
-  grid-column: 1;
-  border-radius: 20px;
-}
-.next-ts-js img {
-  transition: 0.2s ease all;
-  margin-left: 20px;
-}
-@media (max-width: 384px) {
-  .next-ts-js img {
-    width: 100px;
-  }
-}
-.next-ts-js img:hover {
-  margin-bottom: 20px;
-}
-
-.redux-dj-python {
-  grid-row: 3;
-  grid-column: 1;
-  border-radius: 20px;
-}
-.redux-dj-python img {
-  transition: 0.2s ease all;
-  margin-left: 20px;
-}
-@media (max-width: 384px) {
-  .redux-dj-python img {
-    width: 100px;
-  }
-}
-.redux-dj-python img:hover {
-  margin-bottom: 20px;
-}
-
-.sass-tail-css {
-  grid-row: 4;
-  grid-column: 1;
-  border-radius: 20px;
-}
-.sass-tail-css img {
-  transition: 0.2s ease all;
-  margin-left: 20px;
-}
-@media (max-width: 384px) {
-  .sass-tail-css img {
-    width: 100px;
-  }
-}
-.sass-tail-css img:hover {
-  margin-bottom: 20px;
-}
-
-.about-tech {
-  margin: 10px;
-  padding: 10px;
-  border: 2px solid var(--green-text);
-  border-radius: 10px;
-  background-color: var(--shadow-graphite);
-  grid-row: 2/5;
-  grid-column: 2;
-  color: var(--text-color);
-}
-.name-span {
-  color: var(--green-text);
-}
-
-.os-span {
-  color: #7C94CD;
-}
-
-.tilda-span {
-  color: #efc582;
-}
-
-.cat {
-  color: #7C94CD;
-}
-
-.file {
-  color: #D3B989;
-}
-
-/*# sourceMappingURL=my-stack.css.map */
